@@ -1,0 +1,137 @@
+	body
+	{
+		text-align: center;
+		background-color: #F8F8F8;
+	}
+				#flip-wrap
+			{
+				display: flex;
+				font-family: Arial, Tahoma; 
+				font-size: 15px;
+				top: 30%;
+				padding-top: 20px;
+      			margin-left: 35px;
+      			margin-right: 35px;
+      			margin-top: 30px;
+			}
+			.hflip-container
+			{
+				width: 25%;
+				margin:2px;
+				height:35%;
+				
+			}
+			.hflip-card
+			{
+				height: 100%;
+				width:100%;
+				transform-style: preserve-3d;
+				transition: all 1.4s ease;
+			}
+			.face
+			{
+				position: absolute;
+				backface-visibility: hidden;
+				width:100%;
+				height: 100%;
+				
+				text-align: center;
+		        background-color:white;
+		        transition: all 1.2s ease 0s;
+				
+			}
+			.hfront
+			{	
+				
+				box-sizing: border-box;
+				box-shadow: -2px 3px 3px grey;
+				padding: 50px;
+			}
+			.hback
+			{
+				
+				transform: rotateY(180deg);
+				box-sizing: border-box;
+				background-color: orange;
+				 padding: 50px;
+
+			}
+
+			.hflip-card:hover .hfront
+			{
+				transform:rotateY(-180deg);
+				box-shadow: -5px 5px 5px grey;
+				 backface-visibility: hidden;
+			}
+			 .hflip-card:hover .hback{
+         transform: none;
+         backface-visibility: visible;
+            }
+
+.col-1
+{
+  color:#00CFF4;
+}
+.col-2
+{
+	width:90px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 50px;
+	border-radius: 100px;
+	background-color: #80C435;
+	color:white;
+}
+#fontc
+{
+	color:grey;
+}
+.gap
+{
+	width:100%;
+	height:70%;
+	margin-top: 20%;
+	background-color: white;
+	padding-top:40px;
+}
+			.vflip-container
+			{
+				width: 25%;
+				margin:10px 20px 10px 20px;
+				height:50%;
+				font-weight: 500;
+			}
+			.vflip-card
+			{
+				height: 100%;
+				width:100%;
+				transform-style: preserve-3d;
+				transition: all 1.4s ease;
+
+			}
+			.vfront
+			{	
+				
+				box-sizing: border-box;
+				 background-color: #F8F8F8;
+				 padding: 50px 0px 30px 0px;
+			}
+			.vback
+			{
+				
+					transform: rotateX(180deg);
+				box-sizing: border-box;
+				background-color: #00CFF4;
+				 padding: 50px;
+
+			}
+
+			 .vflip-card:hover .vfront
+			{
+				 transform: rotateX(-180deg);
+         backface-visibility: hidden;
+			}
+			 .vflip-card:hover .vback{
+         transform: none;
+         backface-visibility: visible;
+            }
